@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"><!-- InstanceBegin template="/Templates/subpage.dwt" codeOutsideHTMLIsLocked="false" --> <!--<![endif]--><head>
+     <meta charset="utf-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+     <!-- InstanceBeginEditable name="doctitle" -->
+     <title></title>
+     <!-- InstanceEndEditable -->
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+     <link rel="stylesheet" href="css/main.css">
+     <link rel='stylesheet' href='css/weather.css'>
+	 <link rel='stylesheet' href='css/navigation.css' type='text/css'>
+	<script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    <script type='text/javascript' src='js/jquery.min.js'></script>
+    <script type='text/javascript'>
+      $ = jQuery;
+    </script>
+    <script type='text/javascript' src='js/jquery.easing.1.3.js'></script>
+    <script type='text/javascript' src='js/camera.min.js'></script> 
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/jquery.simpleWeather.min.js"></script>
+    <script src="js/main.js"></script>
+	<script type='text/javascript' src='js/navigation.js'></script>
+    <!-- Google Code for Remarketing Tag -->
+<!--------------------------------------------------
+Remarketing tags may not be associated with personally identifiable information or placed on pages related to sensitive categories. See more information and instructions on how to setup the tag on: http://google.com/ads/remarketingsetup
+--------------------------------------------------->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 988826776;
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/988826776/?value=0&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+	
+<!-- InstanceBeginEditable name="head" -->
+	<!-- InstanceEndEditable -->
+</head>
+    <body>
+      <div class='container'><div id='weather'></div></div>
+<div class="navbar navbar-fixed-top" role="navigation" style="">
+    <div class="container">
+    <a class="navbar-brand" href="/"><img src="img/logo-black-box.png" alt="The Hotel Telluride"></a>
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <span>Menu</span>
+        </div>
+        <div class="navbar-collapse in collapse">
+      <nav>
+        <ul>
+          <li>
+            <a href="/telluride-accommodations">Accommodations</a>
+            <ul class='nav-dropdown'>
+              <li>
+                <a href='/telluride-rooms'>Room &amp; Suites</a>
+              </li>
+              <li>
+                <a href='/telluride-photos'>Photo Gallery</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="/telluride-dining">Dining</a>
+          </li>
+          <li>
+            <a href="/telluride-festivals-events" class="two-line">Festivals &amp; Events</a>
+            <ul class='nav-dropdown'>
+              <li>
+                <a href='telluride-about'>About Telluride</a>
+              </li>
+              <li>
+                <a href='telluride-winter'>Winter Events</a>
+              </li>
+              <li>
+                <a href='telluride-summer'>Summer Events</a>
+              </li>
+              <li>
+                <a href='telluride-events'>Event Calendar</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="telluride-hotel-overview" class='two-line'>Hotel Overview</a>
+            <ul class='nav-dropdown'>
+              <li>
+                <a href='telluride-spas'>Spa Services</a>
+              </li>
+              <li>
+                <a href='telluride-ski-rentals'>Ski Rentals</a>
+              </li>
+              <li>
+                <a href='telluride-reviews'>Guest Reviews</a>
+              </li>
+              <li>
+                <a href='telluride-pets'>Furry Friends</a>
+              </li>
+              <li>
+                <a href='telluride-travel-insurance'>Travel Insurance</a>
+              </li>
+              <li>
+                <a href='telluride-HOWDY'>Directions</a>
+              </li>
+              <li>
+                <a href='telluride-photos'>Photo Gallery</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="telluride-groups" class="two-line">Weddings &amp; Groups</a>
+            <ul class='nav-dropdown'>
+              <li>
+                <a href='telluride-weddings'>Weddings</a>
+              </li>
+              <li>
+                <a href='telluride-family-reunions'>Family Reunions</a>
+              </li>
+              <li>
+                <a href='telluride-ski-groups'>Ski Groups</a>
+              </li>
+              <li>
+                <a href='telluride-special-events'>Special Events</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="telluride-vacation-packages">Special Offers</a>
+            <ul class='nav-dropdown'>
+              <li>
+                <a href='telluride-email-club'>Special Offer Sign Up</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Reservations</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="clearfix"></div>
+        </div><!--/.navbar-collapse -->
+    </div>
+</div>
+
+    <!-- Image Slider Start -->
+<div id="subheader">
+<!-- InstanceBeginEditable name="bannerimage" -->
+<img src="img/travel-insurance-banner.jpg" alt="mountain picture" />
+<!-- InstanceEndEditable -->
+</div>    
+  
+     <!-- Image Slider End -->
+     <div class="container-fluid container-nopad">
+     <div class="row">
+		<div class="col-xs-12">
+     	<div id="resform">
+        <div class="container">
+      <label>Arrival<br/><input name="" type="text" value="Select Date"class="form-field"></label>
+     <label>Departure<br/> <input name="" type="text"class="form-field" value="Select Date"></label>
+        <div class="demo">
+       <label>Rooms<br/><select name="" class="demo" >
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          </select></label></div>
+         <div class="demo">
+        <label>Adults<br/><select name="select">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+        </select></label></div>
+         <div class="demo">
+        <label>Children<br/><select name="select2">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+        </select></label></div>
+        <label><input name="" type="text" value="PROMO CODE" class="form-field"></label>
+        <input name="SEARCH" type="button" value="SEARCH" class="submit-button">
+        </div>
+       </div>
+	   </div>
+	   </div>
+    </div>
+    <div class="container container-toppad">
+	<div id="ratesAvailability">
+		<img src='img/ratesavailability.png' alt='' />
+	</div>
+	<div class="container">
+      <div class="col-md-4"><!-- InstanceBeginEditable name="EditRegion1" -->
+<h1><span>TRAVEL INSURANCE</span></h1>
+<h4>Why risk your vacation dreams when you can protect them with ease?</h4>
+<p>
+We strongly recommend travel protection, which gives you exceptional protection for events that can happen beyond your control. Our plan protects your travel investment for you and your traveling companions if you need to cancel your trip for covered reasons prior to departure, or if other covered unforeseen circumstances arise during your trip.  <a href="http://www.vacationguard.com/Static/VacationGuard_LeisurePlus_Flyer_Overview.pdf" target="_blank">You may review the VacationGuard® plan details here.</a>
+</p>
+<h4>Two easy ways to protect yourself:</h4>
+<ol>
+    <li>The easiest way is through our Vacation Experts upon booking your hotel</li>
+    <li>If you waited past your initial booking date, you can buy via our web page with your reservation number and trip cost, provided you have not paid your final trip deposit or already departed on your trip.</li>
+</ol>
+
+<h4>Description of Benefits</h4>
+<p>
+In just seconds, you can obtain a customized benefit package to protect both you and your traveling companions against events that can affect resort vacations. VacationGuard® provides innovative benefits that give you true vacation peace of mind, like:
+</p>
+<ul>
+    <li>Trip Cancellation & Interruption</li>
+    <li>Protections for Job Loss and other perils</li>
+    <li>Trip Delay benefits</li>
+    <li>Emergency Medical Evacuation & Repatriation</li>
+    <li>Medical Expense for Injury & Sickness</li>
+    <li>Accidental Damage to your Rental unit</li>
+    <li>Lost, Stolen, or Delayed Baggage</li>
+    <li>Travel Assistance Protection, Worldwide</li>
+    <li>Protection against Weather</li>
+    <li>Many other benefits too!</li>
+</ul>
+
+        <!-- InstanceEndEditable --></div>
+        <div class="col-md-4"><!-- InstanceBeginEditable name="EditRegion2" -->
+<h4>Valuable enhancements when booking through us:</h4>
+
+<h4>1. Free look</h4>
+<p>
+You have a 21 day free look with VacationGuard® plans, giving you peace of mind to review your benefits and appreciate their value. If for some reason, you wish to cancel within that time, and you have not traveled or filed a claim, just contact your selling agent and you will receive a 100% refund.
+</p>
+
+<h4>2. Pre-existing Medical Condition Exclusion can be waived</h4>
+<p>
+The Pre-Existing Medical Conditions exclusion is waived if you enroll in this Protection Plan at or before your Final deposit with us, and if you purchase this Plan for the full cost of your trip.
+</p>
+
+<h4>3. Trip Inconvenience Benefit</h4>
+<p>
+Weather is unpredictable but protecting your fun doesn't have to be. Subject to plan terms, we protect your ski vacation if weather shuts the mountain down, as well as golf rounds if weather suspends or cancels your play.
+</p>
+
+<h4>4. Coverage on your protection plan beginning and end</h4>
+<p>
+We understand your vacation begins when you leave your home. As such, your VacationGuard® plan automatically extends your trip protection benefits, up to 2 days before your check-in date, and follows you back home, up to 2 days after your check-out date. 
+</p>
+
+
+<h4>Have the right protection for your trip with VacationGuard®
+Call your reservation agent to get your travel peace of mind.</h4>
+
+<a href="pdf/VacationGuard_Resort_Flyer-Overview-102210(1).pdf" target="_blank">Protection Plan Benefits & Descriptions</a> (PDF)<br/>  <a href="pdf/Why-Buy_VacationGuard_Top-10.pdf" target="_blank">10 Reasons to Purchase Travel Insurance</a> (PDF)
+<!-- InstanceEndEditable --></div>
+        
+        <div class="col-md-4"><!-- InstanceBeginEditable name="EditRegion3" -->
+          <div class="col-md-4-mod">
+            <h2>Read • Share • Post</h2>
+            <div class="scrolldividers"><img src="img/dividerscroll.png" class="expand" alt=""/></div>
+            <p>Now’s your chance! Share your Hotel Telluride memories:</p>
+            <div class="scrolldividers"> <img src="img/stamp01.png" alt="Wedding Blog" width="88" height="88" class="seals"> <a href="#"><img src="img/stamp02.png" alt="Hotel Blog" width="88" height="88" class="seals"></a> <a href="#"><img src="img/stamp03.png" alt="Pet Blog" width="88" height="88" class="seals"></a></div>
+          </div>
+          <div class="col-md-4-mod">
+            <h2>Award Winning Hotel</h2>
+            <div class="scrolldividers"><img src="img/dividerscroll.png" class="expand" alt="Scroll divider"/></div>
+            <div class="col-md-6"><img src="img/ribbon01.png" alt="Award Winner Conde Nast Traveller Top 50 Ski Hotels"/></div>
+            <div class="col-md-6"><img src="img/ribbon02.png" alt="Award Winner Trip Advisor Certificate of Excellence 2013"/></div>
+            <div class="clearfix"></div>
+          </div><!-- InstanceEndEditable -->
+        </div>
+        </div>     
+    </div> <!-- /container -->       
+
+        <footer><div class="container">
+      <div class="scrolldividers"><img src="img/bigdividerscroll.png" alt="" class="expand"></div>
+      <div class="footer-div" id="footerLogo"><img src="img/footerLogo.png" alt="The Hotel Telluride" /></div>
+      <div class="footer-div">
+      <span>The Hotel Telluride</span><br />
+199 N Cornet Street<br />
+Telluride, Colorado</div>
+
+<div class="footer-div footer-clear">
+  <span>Contact Us</span><br />
+    Reservations: 866.468.3501<br />
+    Front Desk: 970.369.1188<br />
+    E-Club Sign up
+</div>
+<div class="footer-div">
+  <span>Stay With Us</span><br />
+    Reservations<br />
+    Accommodations<br />
+    Dining
+</div>
+<div class="footer-div footer-clear" id="socMedia">FOLLOW US ON...<br />
+<img src="img/socmedFacebook.png" alt="Facebook"/><img src="img/socmedBlogger.png" alt="Blogger"/><img src="img/socmedGoogle.png" alt="Google"/><img src="img/socmedFoursq.png" alt="FourSquare"/></div>
+<div class="clearfix"></div>
+</div>
+      </footer>
+    </body>
+<!-- InstanceEnd --></html>

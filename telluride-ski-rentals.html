@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"><!-- InstanceBegin template="/Templates/subpage.dwt" codeOutsideHTMLIsLocked="false" --> <!--<![endif]-->
+<head>
+     <meta charset="utf-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+     <!-- InstanceBeginEditable name="doctitle" -->
+     <title></title>
+     <!-- InstanceEndEditable -->
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+     <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css">
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+     <link rel="stylesheet" href="css/main.css">
+     <link rel='stylesheet' href='css/weather.css'>
+	 <link rel='stylesheet' href='css/navigation.css' type='text/css'>
+	<script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    <script type='text/javascript' src='js/jquery.min.js'></script>
+    <script type='text/javascript'>
+      $ = jQuery;
+    </script>
+    <script type="text/javascript" src="http://code.jquery.com/ui/1.10.4/jquery-ui.min.js"></script>
+    <script type='text/javascript' src='js/jquery.easing.1.3.js'></script>
+    <script type='text/javascript' src='js/camera.min.js'></script> 
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/jquery.simpleWeather.min.js"></script>
+    <script src="js/main.js"></script>
+	<script type='text/javascript' src='js/navigation.js'></script>
+    <!-- Google Code for Remarketing Tag -->
+<!--------------------------------------------------
+Remarketing tags may not be associated with personally identifiable information or placed on pages related to sensitive categories. See more information and instructions on how to setup the tag on: http://google.com/ads/remarketingsetup
+--------------------------------------------------->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 988826776;
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+var google_conversion_format = 3;
+/* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/988826776/?value=0&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+	<!-- InstanceBeginEditable name="head" -->
+	<!-- InstanceEndEditable -->
+</head>
+    <body>
+      <div class='container'><div id='weather'></div></div>
+<div class="navbar navbar-fixed-top" role="navigation" style="">
+    <div class="container">
+    <a class="navbar-brand" href="/"><img src="img/logo-black-box.png" alt="The Hotel Telluride"></a>
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <span>Menu</span>
+        </div>
+        <div class="navbar-collapse in collapse">
+      <nav>
+        <ul>
+          <li>
+            <a href="/telluride-accommodations">Accommodations</a>
+            <ul class='nav-dropdown'>
+              <li>
+                <a href='/telluride-rooms'>Room &amp; Suites</a>
+              </li>
+              <li>
+                <a href='/telluride-photos'>Photo Gallery</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="/telluride-dining">Dining</a>
+          </li>
+          <li>
+            <a href="/telluride-festivals-events">Festivals <br>&amp; Events</a>
+            <ul class='nav-dropdown'>
+              <li>
+                <a href='telluride-about'>About Telluride</a>
+              </li>
+              <li>
+                <a href='telluride-winter'>Winter Events</a>
+              </li>
+              <li>
+                <a href='telluride-summer'>Summer Events</a>
+              </li>
+              <li>
+                <a href='telluride-events'>Event Calendar</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="telluride-hotel-overview">Hotel <br>Overview</a>
+            <ul class='nav-dropdown'>
+              <li>
+                <a href='telluride-ski-rentals'>Ski Rentals</a>
+              </li>
+              <li>
+                <a href='telluride-reviews'>Guest Reviews</a>
+              </li>
+              <li>
+                <a href='telluride-pets'>Furry Friends</a>
+              </li>
+              <li>
+                <a href='telluride-directions'>Location & Directions</a>
+              </li>
+              <li>
+                <a href='telluride-photos'>Photo Gallery</a>
+              </li>
+              <li>
+                <a href='telluride-spas'>Spa Services</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="telluride-groups">Weddings <br>&amp; Groups</a>
+            <ul class='nav-dropdown'>
+              <li>
+                <a href='telluride-weddings'>Weddings</a>
+              </li>
+              <li>
+                <a href='telluride-family-reunions'>Family Reunions</a>
+              </li>
+              <li>
+                <a href='telluride-ski-groups'>Ski Groups</a>
+              </li>
+              <li>
+                <a href='telluride-special-events'>Special Events</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="telluride-vacation-packages">Special Offers</a>
+            <ul class='nav-dropdown'>
+              <li>
+                <a href='telluride-email-club'>Special Offer Sign Up</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Reservations</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="clearfix"></div>
+        </div><!--/.navbar-collapse -->
+    </div>
+</div>
+
+    <!-- Image Slider Start -->
+<div id="subheader">
+<!-- InstanceBeginEditable name="bannerimage" -->
+<img src="img/skirentalbanner.jpg" alt="Lift chair skiers"/>
+<!-- InstanceEndEditable -->
+</div>    
+  
+     <!-- Image Slider End -->
+<div class="container-fluid container-nopad">
+  <div class="row">
+    <div class="col-xs-12">
+      <form action="https://gc.synxis.com/rez.aspx">
+        <input type="hidden" name="hotel" value="25759">
+        <input type="hidden" name="chain" value="16209">
+        <input type="hidden" name="start" value="availresults">
+        <div id="resform">
+          <div class="container">
+            <label>Arrival<br/><input class='js-datepicker-start' name="arrive" type="text" placeholder="Select Date" class="form-field"></label>
+            <label>Departure<br/> <input class='js-datepicker-end' name="depart" type="text" class="form-field" placeholder="Select Date"></label>
+            <!--<div class="demo">
+              <label>Rooms<br/>
+                <select name="adults" class="demo" >
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                </select>
+              </label>
+            </div>-->
+            <div class="demo">
+              <label>Adults<br/>
+                <select name="adults">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                </select>
+              </label>
+            </div>
+            <div class="demo">
+              <label>Children<br/>
+                <select name="child">
+                  <option value="0">0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                </select>
+              </label>
+            </div>
+            <label>
+              <input name="promo" type="text" placeholder="PROMO CODE" class="form-field">
+            </label>
+            <input name="external:booking-console" type="submit" value="SEARCH" class="submit-button">
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+    <div class="container container-toppad">
+	<div id="ratesAvailability">
+		<img src='img/ratesavailability.png' alt='' />
+	</div>
+	<div class="container">
+      <div class="col-md-4"><!-- InstanceBeginEditable name="EditRegion1" -->
+     <h1><span>SKI RENTALS</span></h1>
+     <h2>The Hotel Telluride Ski Rental Information</h2>
+<p>
+Telluride Ski Resort is the perfect blend of pure mountain splendor, historic charm, world-class skiing, and unsurpassable beauty. Described as ‘Unmatched in North America', with virtually terrain for all ages and skier abilities, un-crowded lift lines, and 360 degrees of pristine beauty- we feel we are pretty special.
+</p>
+<p>
+The Hotel Telluride is situated a short 3-blocks from the base of Lift 7 and a short 5-blocks from the base of Lift 8. With our complimentary shuttle and ski valet, we make getting to and from the slopes effortless!
+</p>
+<p>
+To take a sneak peak at what Telluride Ski Resort has to offer, view Telluride's <a href="http://www.tellurideskiresort.com/tellski/info/interactive-trail-map.aspx" target="_blank">ski map.</a>
+</p>
+<h2>Ski Rentals Options in Telluride</h2>
+<p>
+We realize the details of planning a ski vacation can tend to be overwhelming.
+To help narrow down the best rental options in Telluride, we have provided you three of our favorites.Below are the ski rental options that we rated the highest in quality, service, and with special Hotel Telluride discounts! 
+</p>
+
+<h2><img src="img/black-tie-logo.png" alt="black tie ski rentals"/>   	
+</h2>
+<h2>Black Tie Ski Rentals</h2>
+<p>
+Black Tie Ski Rentals is offering guests of The Hotel Telluride 20% off ski rentals for the 2011 and 2012 ski season. Black Tie provides the best equipment and outstanding service--all delivered at a time and place that's convenient for you. The best part... we come to you, no more rental shop lines! Experience Telluride's highest rated rental company- Black Tie Ski Rentals. To book your rental today and receive 20% off simply use the Discount Code: Corduroy to receive this offer when reserving online at either <a href="http://www.tellurideskirentals.com/" target="_blank">www.TellurideSkiRentals.com</a> or <a href="http://telluride.blacktieskis.com/" target="_blank">telluride.blacktieskis.com.</a></p>
+<h2><img src="img/ski-inset.jpg" alt="skier"/>
+  
+</h2>
+      <!-- InstanceEndEditable --></div>
+        <div class="col-md-4"><!-- InstanceBeginEditable name="EditRegion2" -->
+        <h2><img src="img/telluride_sports_logo.png" alt="telluride sports logo"/>
+        </h2>
+        <h2>Telluride Sports</h2>
+<p>
+With 8 rental locations in the town of Telluride and Mountain Village, no other rental shop offers Hotel Telluride guests more convenience and service than Telluride Sports. Hotel Telluride guests receive 20% off all ski and board rentals reserved at <a href="http://www.rentskis.com/index.cfm" target="_blank">www.rentskis.com/hoteltelluride</a>. We will also deliver your gear to the hotel for no extra charge! Simply choose delivery as your location option when renting. All gear is stored at our locations free of charge overnight, and equipment can be exchanged or returned at any store location. We promise it will be the easiest rental experience you've ever had!    
+</p>
+<h2><img src="img/bootdoctors-logo.png" alt="bootdoctors logo"/>
+</h2>
+<h2>Bootdoctors- Telluride</h2>
+<p>
+Bootdoctors and Paragon's award-winning ski and snowboard stores are ready to serve you in style! Recently cited by SKI magazine as "America's Best Bootfitters" we offer Telluride's largest selection of demo/rental skis and boards, top-of-the-line tunes and the region's widest choice of outdoor clothing and brands. We can deliver to you at your door or you can choose to visit one of our four Telluride and Mountain Village locations - two slope side Bootdoctors stores plus our Main street Paragon store and Mountain Village Ice Skate Rink and Rentals. We guarantee we've got all your winter sporting gear needs well covered! Alpine ski, AT, Cross country, snowboard, snowshoe all available. Click here for <a href="http://bootdoctors.com/blog/hotel-telluride/" target="_blank">Hotel Telluride Specials.</a>
+</p>
+<h2><img src="img/telluride-resort-logo.png" alt="telluride resort logo"/>
+</h2>
+<h2>Lift & Lodge Packages</h2>
+<p>
+Discounted lodging and lift ticket packages are available by call-in at (866) 468-3501. Our guest service representatives are eager to assist you in customizing the amount of lift tickets that your ski vacation in Telluride will require. Please visit our <a href="telluride-vacation-packages">Special Offers</a> page for more details, before calling to book your lodging and lift ticket package. 
+</p>
+        <p><strong>For reservations and information, call our Vacation Planners at <a href="tel:+1-866-468-3501">866-468-3501</a> or <a href="/telluride-reservations">book online</a> now.</strong></p>
+<!-- InstanceEndEditable --></div>
+        
+        <div class="col-md-4">
+          <div class="col-md-4-mod">
+          <h2>Read • Share • Learn</h2>
+          <div class="scrolldividers"><img src="img/dividerscroll.png" class="expand" alt=""/></div>
+          <h4>Read personal accounts from Hotel Telluride:</h4>
+          <div class="scrolldividers"> <a href="/telluride-wedding-blog"><img src="img/stamp01.png" alt="Wedding Blog" width="88" height="88" class="seals"></a> <a href="/telluride-hotel-blog"><img src="img/stamp02.png" alt="Hotel Blog" width="88" height="88" class="seals"></a> <a href="/telluride-pets-blog"><img src="img/stamp03.png" alt="Pet Blog" width="88" height="88" class="seals"></a></div>
+          </div>
+          <div class="col-md-4-mod"><!-- InstanceBeginEditable name="EditRegion3" -->
+
+            <h2>Award Winning Hotel</h2>
+            <div class="scrolldividers"><img src="img/dividerscroll.png" class="expand" alt="Scroll divider"/></div>
+            <div class="col-md-6"><img src="img/ribbon01.png" alt="Award Winner Conde Nast Traveller Top 50 Ski Hotels"/></div>
+            <div class="col-md-6"><img src="img/ribbon02.png" alt="Award Winner Trip Advisor Certificate of Excellence 2013"/></div>
+            <div class="clearfix"></div>
+          </div><!-- InstanceEndEditable -->
+        </div>
+        </div>     
+    </div> <!-- /container -->       
+
+        <footer><div class="container">
+      <div class="scrolldividers"><img src="img/bigdividerscroll.png" alt="" class="expand"></div>
+      <div class="footer-div" id="footerLogo"><img src="img/footerLogo.png" alt="The Hotel Telluride" /></div>
+      <div class="footer-div">
+      <span>The Hotel Telluride</span><br />
+199 N Cornet Street<br />
+Telluride, Colorado</div>
+
+<div class="footer-div footer-clear">
+  <span>Contact Us</span><br />
+  Reservations: <a href="tel:+1-866-468-3501">866.468.3501</a><br />
+Front Desk: <a href="tel:+1-970-369-1188">970.369.1188</a><br />
+<a href="/telluride-email-club">E-Club Sign up</a></div>
+<div class="footer-div">
+  <span>Stay With Us</span><br />
+  Reservations<br />
+  <a href="/telluride-accommodations">Accommodations</a><br />
+  <a href="/telluride-dining">Dining</a></div>
+<div class="footer-div footer-clear" id="socMedia">FOLLOW US ON...<br />
+<img src="img/socmedFacebook.png" alt="Facebook"/><img src="img/socmedBlogger.png" alt="Blogger"/><img src="img/socmedGoogle.png" alt="Google"/><img src="img/socmedFoursq.png" alt="FourSquare"/></div>
+<div class="clearfix"></div>
+</div>
+      </footer>
+    </body>
+<!-- InstanceEnd --></html>

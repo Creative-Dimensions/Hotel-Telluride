@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]--><head>
+     <meta charset="utf-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+     <!-- TemplateBeginEditable name="doctitle" -->
+     <title></title>
+     <meta name="description" content="">
+     <!-- TemplateEndEditable -->
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+     <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css">
+     <link rel="stylesheet" href="../css/bootstrap.min.css">
+     <link rel="stylesheet" href="../css/bootstrap-theme.min.css">
+     <link rel="stylesheet" href="../css/main.css">
+     <link rel='stylesheet' href='../css/weather.css'>
+	 <link rel='stylesheet' id='camera-css' href='../css/camera.css' type='text/css' media='all'>
+	 <link rel='stylesheet' href='../css/navigation.css' type='text/css'>
+
+	<script src="../js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    <script type='text/javascript' src='../js/jquery.min.js'></script>
+    <script type='text/javascript'>
+      $ = jQuery;
+    </script>
+    <script type="text/javascript" src="http://code.jquery.com/ui/1.10.4/jquery-ui.min.js"></script>
+    <script type='text/javascript' src='../js/jquery.easing.1.3.js'></script>
+    <script type='text/javascript' src='../js/camera.min.js'></script> 
+    <script src="../js/vendor/bootstrap.min.js"></script>
+    <script src="../js/jquery.simpleWeather.min.js"></script>
+    <script src="../js/main.js"></script>
+	<script type='text/javascript' src='../js/navigation.js'></script>
+    
+    <script type="text/javascript">
+		jQuery(function() {
+			
+			jQuery('#camera_wrap_1').camera({
+				thumbnails: false,
+				pagination: false,
+				fx:'simpleFade',
+				autoAdvance: true,
+				loader: 'none',
+				navigation: false,
+				navigationHover: false,
+				mobileNavHover: true,
+				time: 1500,
+				height:'30%',
+				playPause: false
+				
+			});
+		
+		});
+	</script>
+   <!-- Google Analytics Code-->
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-51028006-1', 'hoteltellurideco.com');
+  ga('send', 'pageview');
+
+</script>
+<!-- Google Code for Remarketing Tag -->
+<!--------------------------------------------------
+Remarketing tags may not be associated with personally identifiable information or placed on pages related to sensitive categories. See more information and instructions on how to setup the tag on: http://google.com/ads/remarketingsetup
+--------------------------------------------------->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 988826776;
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+var google_conversion_format = 3;
+/* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/988826776/?value=0&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+
+    
+<!-- TemplateBeginEditable name="head" -->
+    <!-- TemplateEndEditable -->
+</head>
+    <body>
+      <div class='container'><div id='weather'></div></div>
+<div class="navbar navbar-fixed-top" role="navigation" style="">
+    <div class="container">
+    <a class="navbar-brand" href="/"><img src="img/logo-black-box.png" alt="The Hotel Telluride"></a>
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <span>Menu</span>
+        </div>
+        <div class="navbar-collapse in collapse">
+      <nav>
+        <ul>
+          <li>
+            <a href="/telluride-accommodations">Accommodations</a>
+            <ul class='nav-dropdown'>
+              <li>
+                <a href='/telluride-rooms'>Room &amp; Suites</a>
+              </li>
+              <li>
+                <a href='/telluride-photos'>Photo Gallery</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="/telluride-dining">Dining</a>
+          </li>
+          <li>
+            <a href="/telluride-festivals-events">Festivals <br>&amp; Events</a>
+            <ul class='nav-dropdown'>
+              <li>
+                <a href='telluride-about'>About Telluride</a>
+              </li>
+              <li>
+                <a href='telluride-winter'>Winter Events</a>
+              </li>
+              <li>
+                <a href='telluride-summer'>Summer Events</a>
+              </li>
+              <li>
+                <a href='telluride-events'>Event Calendar</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="telluride-hotel-overview">Hotel <br>Overview</a>
+            <ul class='nav-dropdown'>
+              <li>
+                <a href='telluride-ski-rentals'>Ski Rentals</a>
+              </li>
+              <li>
+                <a href='telluride-reviews'>Guest Reviews</a>
+              </li>
+              <li>
+                <a href='telluride-pets'>Furry Friends</a>
+              </li>
+              <li>
+                <a href='telluride-directions'>Location & Directions</a>
+              </li>
+              <li>
+                <a href='telluride-photos'>Photo Gallery</a>
+              </li>
+               <li>
+                <a href='telluride-spas'>Spa Services</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="telluride-groups">Weddings <br>&amp; Groups</a>
+            <ul class='nav-dropdown'>
+              <li>
+                <a href='telluride-weddings'>Weddings</a>
+              </li>
+              <li>
+                <a href='telluride-family-reunions'>Family Reunions</a>
+              </li>
+              <li>
+                <a href='telluride-ski-groups'>Ski Groups</a>
+              </li>
+              <li>
+                <a href='telluride-special-events'>Special Events</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="telluride-vacation-packages">Special Offers</a>
+            <ul class='nav-dropdown'>
+              <li>
+                <a href='telluride-email-club'>Special Offer Sign Up</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Reservations</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="clearfix"></div>
+        </div><!--/.navbar-collapse -->
+    </div>
+</div>
+<!-- Image Slider Start -->
+<div id="slider">
+  <div class="camera_wrap camera_azure_skin" id="camera_wrap_1">
+  <!-- TemplateBeginEditable name="slider" -->
+    <div data-src="img/slider/slider_banner_01.jpg"></div>
+    <div data-src="img/slider/slider_banner_02.jpg"></div><!-- TemplateEndEditable -->
+  </div>
+</div>
+<!-- Image Slider End -->
+<div class="container-fluid container-nopad">
+  <div class="row">
+    <div class="col-xs-12">
+      <form action="https://gc.synxis.com/rez.aspx">
+        <input type="hidden" name="hotel" value="25759">
+        <input type="hidden" name="chain" value="16209">
+        <input type="hidden" name="start" value="availresults">
+        <div id="resform">
+          <div class="container">
+            <label>Arrival<br/><input class='js-datepicker-start' name="arrive" type="text" placeholder="Select Date" class="form-field"></label>
+            <label>Departure<br/> <input class='js-datepicker-end' name="depart" type="text" class="form-field" placeholder="Select Date"></label>
+            <!--<div class="demo">
+              <label>Rooms<br/>
+                <select name="adults" class="demo" >
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                </select>
+              </label>
+            </div>-->
+            <div class="demo">
+              <label>Adults<br/>
+                <select name="adults">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                </select>
+              </label>
+            </div>
+            <div class="demo">
+              <label>Children<br/>
+                <select name="child">
+                  <option value="0">0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                </select>
+              </label>
+            </div>
+            <label>
+              <input name="promo" type="text" placeholder="PROMO CODE" class="form-field">
+            </label>
+            <input name="external:booking-console" type="submit" value="SEARCH" class="submit-button">
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+    <div class="container container-toppad">
+      <div id="ratesAvailability">
+        <img src='img/ratesavailability.png' alt='' />
+      </div>
+      <div id="specialOffers">
+        <a href="#">
+          <img src='../img/summer-promo.jpg' alt='Special Offers: Countdown to summer. Up to 40% off. Book now.' />
+        </a>
+        <a href='#' class='close-special-offers' data-hide-div='#specialOffers'>Close</a>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+        <div class="col-md-4-mod"><!-- TemplateBeginEditable name="EditRegion1" -->
+          <h2>Sign up for Special offers</h2>
+          <div class="scrolldividers"><img src="../img/dividerscroll.png" class="expand" alt=""/></div>
+          <p>Sign up for our exclusive email list to gain access to the lowest rates and the best adventures imaginable. By signing up, you will be automatically enterred to win a free Hotel Telluride vacation!</p>
+          <label>CONTACT<br/>
+            <input name="" type="text" value="Email"class="form-field-big">
+          </label>
+          <input name="SEARCH" type="button" value="SUBMIT" class="submit-button">
+        <!-- TemplateEndEditable --></div>
+        </div>
+        <div class="col-md-4">
+        <div class="col-md-4-mod"><!-- TemplateBeginEditable name="EditRegion4" -->
+          <h2>Read • Share • Learn</h2>
+          <div class="scrolldividers"><img src="../img/dividerscroll.png" class="expand" alt=""/></div>
+          <h4>Read personal accounts from Hotel Telluride:</h4>
+          <div class="scrolldividers"> <a href="/telluride-wedding-blog"><img src="../img/stamp01.png" alt="Wedding Blog" width="88" height="88" class="seals"></a> <a href="/telluride-hotel-blog"><img src="../img/stamp02.png" alt="Hotel Blog" width="88" height="88" class="seals"></a> <a href="/telluride-pets-blog"><img src="../img/stamp03.png" alt="Pet Blog" width="88" height="88" class="seals"></a></div>
+        <!-- TemplateEndEditable --></div></div>
+        <div class="col-md-4"><div class="col-md-4-mod"><!-- TemplateBeginEditable name="EditRegion5" -->
+          <h2>Award Winning Hotel</h2>
+          <div class="scrolldividers"><img src="../img/dividerscroll.png" class="expand" alt="Scroll divider"/></div>
+          <div class="col-md-6 text-center"><img src="../img/ribbon01.png" alt="Award Winner Conde Nast Traveller Top 50 Ski Hotels"/></div>
+          <div class="col-md-6 text-center"><img src="../img/ribbon02.png" alt="Award Winner Trip Advisor Certificate of Excellence 2013"/></div>
+        <!-- TemplateEndEditable -->
+          <div class="clearfix"></div>
+</div>
+        </div>
+      </div>     
+    </div> <!-- /container -->       
+ <div class="container">
+ <div class="col-md-4"><!-- TemplateBeginEditable name="EditRegion6" -->
+   <h1>Telluride Rooms &amp; Suites
+   </h1>
+   <p>Check out our rooms and suites, each with a breath-taking mountain view. Browse our all-inclusive vacation packages and ensure you’ll have a worry-free vacation.</p>
+ <!-- TemplateEndEditable --></div>
+ <div class="col-md-4"><!-- TemplateBeginEditable name="EditRegion7" -->The Hotel Telluride, located close to shops, art galleries, restaurants and Telluride Ski Resort, puts you in the center of all this Rocky Mountain Town has to offer. Check out our rooms and suites, each with a breath-taking mountain view. Browse our all-inclusive vacation packages and ensure you’ll have a worry-free vacation.<!-- TemplateEndEditable --></div>
+ <div class="col-md-4"><!-- TemplateBeginEditable name="EditRegion8" -->The Hotel Telluride, located close to shops, art galleries, restaurants and Telluride Ski Resort, puts you in the center of all this Rocky Mountain Town has to offer. Check out our rooms and suites, each with a breath-taking mountain view. Browse our all-inclusive vacation packages and ensure you’ll have a worry-free vacation. <!-- TemplateEndEditable --></div>
+ </div>
+        <footer><div class="container">
+      <div class="scrolldividers"><img src="../img/bigdividerscroll.png" alt="" class="expand"></div>
+      <div class="footer-div" id="footerLogo"><img src="../img/footerLogo.png" alt="The Hotel Telluride" /></div>
+      <div class="footer-div">
+      <span>The Hotel Telluride</span><br />
+199 N Cornet Street<br />
+Telluride, Colorado</div>
+
+<div class="footer-div footer-clear">
+  <span>Contact Us</span><br />
+    Reservations: 866.468.3501<br />
+    Front Desk: 970.369.1188<br />
+    E-Club Sign up
+</div>
+<div class="footer-div">
+  <span>Stay With Us</span><br />
+    Reservations<br />
+    Accommodations<br />
+    Dining
+</div>
+<div class="footer-div footer-clear" id="socMedia">FOLLOW US ON...<br />
+<img src="../img/socmedFacebook.png" alt="Facebook"/><img src="../img/socmedBlogger.png" alt="Blogger"/><img src="../img/socmedGoogle.png" alt="Google"/><img src="../img/socmedFoursq.png" alt="FourSquare"/></div>
+<div class="clearfix"></div>
+</div>
+      </footer>
+     
+<!-- Google Code for Remarketing Tag -->
+<!--------------------------------------------------
+Remarketing tags may not be associated with personally identifiable information or placed on pages related to sensitive categories. See more information and instructions on how to setup the tag on: http://google.com/ads/remarketingsetup
+--------------------------------------------------->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 988826776;
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/988826776/?value=0&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+
+    </body>
+</html>

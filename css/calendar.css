@@ -1,0 +1,20 @@
+.ui-rtsr-unselected, .agenda .event-title{
+  color: #7d2717 !important;
+}
+
+.view-cap, .view-container-border, .agenda .date-label, .ui-rtsr-unselected, .ui-rtsr-selected{
+  background-color: #e9daac;
+}
+
+.navBack{
+  background-image: url(/img/arrow-left.gif);
+}
+
+.navForward{
+  background-image: url(/img/arrow-right.gif);
+}
+
+.navbutton{
+  background-position: 3px 0px;
+  background-repeat: no-repeat;
+}
